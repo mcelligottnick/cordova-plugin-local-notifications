@@ -19,7 +19,11 @@
 
     <!-- cordova -->
     <engines>
+        <!-- Currently I think Steroids uses Cordova 3.5.0 which will fail on this. 
+        Lets bump down the required version and hope it doesn't break anything...
         <engine name="cordova" version=">=3.6.0" />
+         -->
+        <engine name="cordova" version=">=3.5.0" />
         <engine name="cordova" version="<4.0.0" />
     </engines>
 
