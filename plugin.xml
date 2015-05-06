@@ -82,8 +82,16 @@
 
     <!-- android -->
     <platform name="android">
-
+            
+        <!-- getting error on AppGyver build; Your Cordova plugin tries to include a library 
+        (eg. android-support-xx.jar) which is already included. Remove reference to the 
+        offending library from plugin.xml of your Cordova plugin.
+        
+        There are no explicit .jar files included here, so lets comment out this (only)
+        dependency.
+        
         <dependency id="android.support.v4" />
+        -->
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="LocalNotification">
